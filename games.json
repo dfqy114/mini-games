@@ -1,6 +1,40 @@
 {
   "title": "小游戏站",
-  "generatedAt": "2026-11-08T02:59:03.946Z",
-  "count": 0,
-  "games": []
+  "generatedAt": "2026-11-08T05:44:47.239Z",
+  "count": 3,
+  "games": [
+    {
+      "id": "65bf2510qw6n",
+      "title": "一念江湖",
+      "desc": "",
+      "tags": [],
+      "size": 727627,
+      "fileCount": 1,
+      "uploadedAt": 1794108279460,
+      "cover": "covers/65bf2510qw6n.png",
+      "play": "play/65bf2510qw6n.html"
+    },
+    {
+      "id": "6d66396fqtoe",
+      "title": "霓虹之下 · 都市生存",
+      "desc": "霓虹之下：一款发生在城市边缘的文字生存模拟。打工、学习、吃饭、租房、开店，在霓虹灯下活出自己的结局。",
+      "tags": [],
+      "size": 697007,
+      "fileCount": 1,
+      "uploadedAt": 1794108276166,
+      "cover": "covers/6d66396fqtoe.png",
+      "play": "play/6d66396fqtoe.html"
+    },
+    {
+      "id": "e4396e9cqqcr",
+      "title": "深海垂钓 · Abyss Angler",
+      "desc": "",
+      "tags": [],
+      "size": 771166,
+      "fileCount": 1,
+      "uploadedAt": 1794108271860,
+      "cover": "covers/e4396e9cqqcr.png",
+      "play": "play/e4396e9cqqcr.html"
+    }
+  ]
 }
