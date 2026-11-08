@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>测试·星港</title>
+<meta name="description" content="静态站导出测试用游戏一">
+</head>
+<body style="margin:0;overflow:hidden;background:#071026;color:#e6ecff;font-family:system-ui,sans-serif">
+<canvas id="c" style="position:fixed;inset:0;width:100%;height:100%"></canvas>
+<div style="position:fixed;inset:0;display:grid;place-items:center;text-align:center;pointer-events:none">
+  <div>
+    <h1 style="margin:0;font-size:30px;letter-spacing:8px;text-shadow:0 0 18px #6b8cff">星 港</h1>
+    <p style="margin:10px 0 0;opacity:.65;font-size:12px">静态站测试 · STARPORT</p>
+  </div>
+</div>
+<script>
+var c=document.getElementById("c"),x=c.getContext("2d"),stars=[];
+function resize(){c.width=innerWidth;c.height=innerHeight;stars=[];for(var i=0;i<90;i++)stars.push({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.6+.3,s:Math.random()*.35+.05});}
+addEventListener("resize",resize);resize();
+(function loop(){x.clearRect(0,0,c.width,c.height);for(var i=0;i<stars.length;i++){var s=stars[i];s.y+=s.s;if(s.y>c.height){s.y=-2;s.x=Math.random()*c.width;}x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fillStyle="rgba(150,190,255,"+(.3+s.r/3)+")";x.fill();}requestAnimationFrame(loop);})();
+</script>
+</body>
+</html>

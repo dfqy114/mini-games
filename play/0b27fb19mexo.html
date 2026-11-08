@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>游玩 · 小游戏站</title>
+<meta name="description" content="HTML 小游戏，点开即玩。">
+<link rel="icon" href="../favicon.svg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="play-mode">
+  <header class="playbar">
+    <a class="btn ghost back" href="../" title="返回游戏列表">← 返回</a>
+    <div class="title" id="play-title">加载中…<small id="play-sub"></small></div>
+    <div class="play-actions">
+      <button class="btn" id="btn-reload" title="重新载入游戏">↻ <span class="label">重开</span></button>
+      <button class="btn" id="btn-full" title="全屏">⛶ <span class="label">全屏</span></button>
+      <a class="btn" id="btn-open" target="_blank" rel="noopener" title="在新标签页打开">↗ <span class="label">新窗口</span></a>
+    </div>
+  </header>
+
+  <div class="frame-wrap" id="frame-wrap">
+    <iframe id="frame" title="游戏" allow="fullscreen; autoplay; gamepad; clipboard-write"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-downloads allow-pointer-lock"></iframe>
+  </div>
+
+  <div class="play-loading" id="play-loading">
+    <div>
+      <div class="spinner"></div>
+      <div>游戏载入中…</div>
+    </div>
+  </div>
+
+  <script>window.__GAME__ = {"title":"测试·星港","desc":"静态站导出测试用游戏一","tags":[],"src":"../g/0b27fb19mexo/index.html"};</script>
+  <script src="../static-play.js"></script>
+</body>
+</html>

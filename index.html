@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>小游戏站 · HTML 游戏合集</title>
+<meta name="description" content="点开就能玩的 HTML 小游戏合集，手机和电脑都能直接打开。">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="static.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🎮</div>
+      <div>
+        <h1>小游戏站</h1>
+        <p class="sub">HTML GAME COLLECTION</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <a class="btn ghost" id="repo-link" href="#" target="_blank" rel="noopener" hidden>GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero static-hero">
+      <div class="hero-icon">🕹️</div>
+      <h2>点开就能玩的小游戏合集</h2>
+      <p>每个游戏独立打包、离线可玩，手机和电脑浏览器直接打开，<br>不需要下载安装。</p>
+      <div class="hint" id="static-hint">正在加载…</div>
+    </section>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="toolbar" id="toolbar" hidden>
+      <div class="search-wrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg>
+        <input class="search" id="search" type="search" placeholder="搜索游戏标题、简介或标签…" autocomplete="off">
+      </div>
+      <select class="select" id="sort" title="排序">
+        <option value="new">最新上传</option>
+        <option value="old">最早上传</option>
+        <option value="name">名称 A → Z</option>
+        <option value="size">文件从大到小</option>
+      </select>
+    </div>
+
+    <div class="tags" id="tags" hidden></div>
+
+    <section class="grid" id="grid"></section>
+
+    <div class="empty" id="empty" hidden></div>
+  </main>
+
+  <footer>
+    <div class="tips">
+      <span>⚡ 纯静态托管 · 无后端、不收集任何数据</span>
+      <span>🔄 新游戏在本机上传后重新发布即可更新</span>
+    </div>
+  </footer>
+
+  <script>window.__SITE__ = {"title":"小游戏站","repoUrl":"https://github.com/dfqy114/mini-games","builtAt":"2026-11-08T02:53:17.941Z","count":1};</script>
+  <script>window.__GAMES__ = [{"id":"0b27fb19mexo","title":"测试·星港","desc":"静态站导出测试用游戏一","tags":[],"size":1398,"fileCount":1,"uploadedAt":1794106390813,"cover":"covers/0b27fb19mexo.png","play":"play/0b27fb19mexo.html","src":"../g/0b27fb19mexo/index.html"}];</script>
+  <script src="static-app.js"></script>
+</body>
+</html>

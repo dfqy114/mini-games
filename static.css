@@ -1,0 +1,8 @@
+/* 小游戏站 · 静态版补充样式 */
+
+.static-hero { border-style: solid; border-color: var(--line); }
+.static-hero .hint { margin-top: 0; font-size: 11.5px; }
+#static-hint strong { color: var(--text); font-weight: 600; }
+
+footer { margin-top: 34px; }
+footer .tips a { color: #a99fff; }
